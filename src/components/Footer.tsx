@@ -5,7 +5,7 @@ import footerlogo from "../assets/Footer-logo.png";
 const Footer: React.FC = () => {
   return (
     <footer
-      className="relative z-50 border-t border-transparent bg-[linear-gradient(180deg,#0B0E15_0%,#010101_100%)] text-white font-medium px-4 py-12 overflow-hidden"
+      className="relative z-50 border-t border-transparent bg-[linear-gradient(180deg,#0B0E15_0%,#010101_100%)] text-white font-medium px-4 py-20 overflow-hidden"
       style={{
         borderImageSource:
           "linear-gradient(90deg, #192235 0%, #0059FF 40%, #6FADFF 50%, #0059FF 60%, #192235 100%)",
