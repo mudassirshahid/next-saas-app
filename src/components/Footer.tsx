@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         {/* About Us Section (Takes 4 columns) */}
         <div className="col-span-12 md:col-span-5">
           <div className="flex flex-col gap-6">
-            <Image src={footerlogo} alt="footer logo" />
+            <Image src={footerlogo} alt="footer logo" unoptimized />
             <ul className="flex flex-col flex-wrap gap-3">
               <li>
                 1234 Innovation Blvd, Suite 567

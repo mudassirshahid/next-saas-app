@@ -69,8 +69,8 @@ const Features = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="flex xl:flex-row flex-col justify-center items-center xl:gap-3 gap-8"
         >
-          <Image src={f2} alt="features" />
-          <Image src={f4} alt="features" />
+          <Image src={f2} alt="features" unoptimized />
+          <Image src={f4} alt="features" unoptimized />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
@@ -79,8 +79,8 @@ const Features = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="flex xl:flex-row flex-col justify-center items-center xl:mt-4 mt-8 xl:gap-3 gap-8"
         >
-          <Image src={f1} alt="features" />
-          <Image src={f3} alt="features" />
+          <Image src={f1} alt="features" unoptimized />
+          <Image src={f3} alt="features" unoptimized />
         </motion.div>
       </div>
     </>

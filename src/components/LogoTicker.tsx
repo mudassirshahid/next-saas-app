@@ -33,6 +33,7 @@ const LogoTicker = () => {
                 key={index}
                 src={logo}
                 alt="client logo"
+                unoptimized
                 className="w-40 h-10 sm:h-14 object-contain"
               />
             ))}
