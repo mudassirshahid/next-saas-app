@@ -49,7 +49,7 @@ const Pricing = () => {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="lg:text-left text-center border-t border-transparent border bg-[radial-gradient(43.69%_75.71%_at_50%_44.52%,#10141A_0%,#0C121C_50%,#0A1017_100%)] text-white font-medium pt-5 pb-10"
+              className="lg:text-left text-center border-t border-transparent bg-[radial-gradient(43.69%_75.71%_at_50%_44.52%,#10141A_0%,#0C121C_50%,#0A1017_100%)] text-white font-medium pt-5 pb-10"
               style={{
                 borderImageSource:
                   "linear-gradient(90deg, #192235 0%, #0059FF 40%, #6FADFF 50%, #0059FF 60%, #192235 100%)",
@@ -132,10 +132,10 @@ const Pricing = () => {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="lg:text-left text-center border-t border-transparent border bg-[linear-gradient(180deg,#1B1430_0%,#0F0D16_50%,#1B1430_100%)] text-white font-medium pt-5 pb-10"
+              className="lg:text-left text-center border-t border-transparent bg-[linear-gradient(180deg,#1B1430_0%,#0F0D16_50%,#1B1430_100%)] text-white font-medium pt-5 pb-10"
               style={{
                 borderImageSource:
-                  "linear-gradient(90deg, #192235 0%, #0059FF 40%, #6FADFF 50%, #0059FF 60%, #192235 100%)",
+                  "linear-gradient(90deg, #0D0F15 0%, #9A56FF 36.4%, #E5D3FF 50%, #9A56FF 63.9%, #0D0F15 100%)",
                 borderImageSlice: 1,
               }}
             >
@@ -226,7 +226,7 @@ const Pricing = () => {
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
-              className="lg:text-left text-center border-t border-transparent border bg-[radial-gradient(43.69%_75.71%_at_50%_44.52%,#10141A_0%,#0C121C_50%,#0A1017_100%)] text-white font-medium pt-5 pb-10"
+              className="lg:text-left text-center border-t border-transparent bg-[radial-gradient(43.69%_75.71%_at_50%_44.52%,#10141A_0%,#0C121C_50%,#0A1017_100%)] text-white font-medium pt-5 pb-10"
               style={{
                 borderImageSource:
                   "linear-gradient(90deg, #192235 0%, #0059FF 40%, #6FADFF 50%, #0059FF 60%, #192235 100%)",
