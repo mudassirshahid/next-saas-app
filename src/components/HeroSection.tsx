@@ -84,7 +84,7 @@ function HeroSection() {
             }}
           >
             <div className="flex justify-center items-center">
-              <Image src={frame} alt="Hero frame" />
+              <Image src={frame} alt="Hero frame" unoptimized />
             </div>
           </motion.div>
         </div>
