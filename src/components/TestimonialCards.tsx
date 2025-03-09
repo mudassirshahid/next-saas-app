@@ -1,7 +1,7 @@
 "use client";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import heart from "../assets/heart-rounded.png";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -34,16 +34,15 @@ function TestimonialCards() {
         className="bg-no-repeat bg-[50%_-68px] "
         style={{ backgroundImage: `url(${heart.src})` }}
       >
-                    <div className="absolute bottom-0 left-0 right-0 top-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:70px_70px] [mask-image:radial-gradient(ellipse_20%_50%_at_50%_5%,#000_55%,transparent_10%)]"></div>
-        <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        viewport={{ once: false }}
-        className="relative z-10 w-full text-center md:pt-24 pt-10 pb-10 md:bg-[radial-gradient(18%_50%_at_50%_55%,rgba(132,81,215,0.47)_0%,rgba(1,1,1,0.32)_80%)] bg-[radial-gradient(18%_64%_at_50%_55%,rgba(132,81,215,0.47)_0%,rgba(1,1,1,0.32)_80%)] bg-no-repeat bg-center bg-cover">
-          
+        <div className="absolute bottom-0 left-0 right-0 top-10 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:70px_70px] [mask-image:radial-gradient(ellipse_20%_50%_at_50%_5%,#000_55%,transparent_10%)]"></div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          viewport={{ once: false }}
+          className="relative z-10 w-full text-center md:pt-24 pt-10 pb-10 md:bg-[radial-gradient(18%_50%_at_50%_55%,rgba(132,81,215,0.47)_0%,rgba(1,1,1,0.32)_80%)] bg-[radial-gradient(18%_64%_at_50%_55%,rgba(132,81,215,0.47)_0%,rgba(1,1,1,0.32)_80%)] bg-no-repeat bg-center bg-cover"
+        >
           <div className="">
-
             <h3 className="mt-20 md:mt-0 text-4xl md:text-5xl md:leading-[71px] font-medium">
               Our Customers
             </h3>

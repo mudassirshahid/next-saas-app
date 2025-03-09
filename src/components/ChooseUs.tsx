@@ -2,49 +2,49 @@
 import React from "react";
 import ellipse from "../assets/Ellipse-light.png";
 import { motion } from "framer-motion";
-import vector from '../assets/Vector.svg'
-import vector1 from '../assets/Vector (1).svg'
-import vector2 from '../assets/Document.svg'
-import vector3 from '../assets/message-text.svg'
-import vector4 from '../assets/Shield Done.svg'
-import vector5 from '../assets/Upload.svg'
+import vector from "../assets/Vector.svg";
+import vector1 from "../assets/Vector (1).svg";
+import vector2 from "../assets/Document.svg";
+import vector3 from "../assets/message-text.svg";
+import vector4 from "../assets/Shield Done.svg";
+import vector5 from "../assets/Upload.svg";
 
 const ChooseUs = () => {
   const features = [
     {
-      icon: <img src={vector.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "Intuitive User Experience",
       desc: "Start a quick with a user-friendly interface designed for maximum easy and efficiency.",
     },
     {
-      icon: <img src={vector1.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector1.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "Boost Productivity",
       desc: "Use pre-default transitions to save time and productivity.",
     },
     {
-      icon: <img src={vector2.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector2.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "Customizable Templates",
       desc: "Get ready made customizable templates for your projects.",
     },
     {
-      icon: <img src={vector3.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector3.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "24/7 Support",
       desc: "Get instant assistance anytime with our intelligent, always available assistant.",
     },
     {
-      icon:<img src={vector4.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector4.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "Data Security & Compliance",
       desc: "Safeguard your operations with industry-leading standards.",
     },
     {
-      icon: <img src={vector5.src} alt="Icon" className="w-[100%] h-[100%]" />,
+      icon: <img src={vector5.src} alt="Icon" className="w-[7rem] h-[7rem]" />,
       title: "High-Quality Export",
       desc: "High-quality export options allow users to download their content in formats",
     },
   ];
   return (
     <>
-      <div className="relative xl:max-w-7xl lg:max-w-4xl max-w-xl mx-auto my-20">
+      <div className="relative xl:max-w-7xl lg:max-w-4xl max-w-xl mx-auto md:my-20 md:py-14 py-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,34 +61,25 @@ const ChooseUs = () => {
             and unmatched performance.
           </p>
         </motion.div>
-        <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
-            className="w-[100%] h-[100%]  bg-no-repeat bg-[length:70rem_43rem] bg-[50%_50%] bg-opacity-50"
+        <div>
+          <div
+            className="w-[100%] h-[100%] absolute top-24  bg-no-repeat bg-[length:100%_100%] bg-[50%_10%] bg-opacity-50"
             style={{
               backgroundImage: `url(${ellipse.src})`,
             }}
-          >
-        <div
-          
-          className="relative sm:px-10 px-8"
-        >
-         
-            <section className="relative sm:px-20 px-10 lg:py-28 sm:py-18 py-10 border border-white border-opacity-20 rounded-2xl bg-gradient-to-r from-[#0D0B14E6] to-[#0B1014E6] backdrop-blur-[16px]">
+          ></div>
+          <div className="relative sm:px-10 px-8">
+            <section className="relative sm:px-20 px-10 lg:py-18 sm:py-18 py-10 border border-white border-opacity-20 rounded-2xl bg-gradient-to-r from-[#0D0B14E6] to-[#0B1014E6] backdrop-blur-[16px]">
               <div className="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
-                <div className="mt-12 lg:mt-0">
-                  <ul className="grid gap-8 lg:grid-cols-3">
+                <div className="">
+                  <ul className="grid lg:grid-cols-3">
                     {features.map((item, idx) => (
                       <li
                         key={idx}
-                        className="flex flex-col justify-center items-center text-center gap-4 my-4"
+                        className="flex flex-col justify-center items-center text-center my-4"
                       >
-                        <div className="">
-                          {item.icon}
-                        </div>
-                        <div>
+                        {item.icon}
+                        <div className="-translate-y-7">
                           <h4 className="text-xl text-white font-bold">
                             {item.title}
                           </h4>
@@ -102,9 +93,8 @@ const ChooseUs = () => {
                 </div>
               </div>
             </section>
-          
+          </div>
         </div>
-        </motion.div>
       </div>
     </>
   );
