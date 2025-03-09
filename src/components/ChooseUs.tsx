@@ -69,10 +69,10 @@ const ChooseUs = () => {
             }}
           ></div>
           <div className="relative sm:px-10 px-8">
-            <section className="relative sm:px-20 px-10 lg:py-18 sm:py-18 py-10 border border-white border-opacity-20 rounded-2xl bg-gradient-to-r from-[#0D0B14E6] to-[#0B1014E6] backdrop-blur-[16px]">
+            <section className="relative sm:px-12 px-10 lg:py-18 sm:py-12 py-10 border border-white border-opacity-20 rounded-2xl bg-gradient-to-r from-[#0D0B14E6] to-[#0B1014E6] backdrop-blur-[16px]">
               <div className="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
                 <div className="">
-                  <ul className="grid lg:grid-cols-3">
+                  <ul className="grid lg:grid-cols-3 gap-[0%_12%]">
                     {features.map((item, idx) => (
                       <li
                         key={idx}
