@@ -63,7 +63,7 @@ const ChooseUs = () => {
         </motion.div>
         <div>
           <div
-            className="w-[100%] h-[100%] absolute top-24  bg-no-repeat bg-[length:100%_100%] bg-[50%_10%] bg-opacity-50"
+            className="w-[100%] h-[100%] absolute top-36  bg-no-repeat bg-[length:100%_90%] bg-[50%_10%] bg-opacity-50"
             style={{
               backgroundImage: `url(${ellipse.src})`,
             }}
