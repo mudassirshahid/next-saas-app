@@ -19,35 +19,37 @@ function Navbar() {
   }
   return (
     
-    <div className="fixed sm:top-10 top-0 inset-x-0 max-w-2xl mx-auto z-50">
+    <div className="fixed sm:top-10 top-0 inset-x-0 max-w-2xl mx-auto z-[999]">
       <div className="flex justify-between items-center border-[0.8px] border-[#ffffff1f] sm:rounded-full px-8 py-4 bg-[linear-gradient(180deg,rgba(23,29,45,0.5)_0%,rgba(4,11,29,0.5)_100%)]  ">
         <div>
+          <Link href={"/"}>
           <Image src={logo} width={50} height={50} alt="logo" />
+          </Link>
         </div>
 
         <div className="sm:inline-flex hidden gap-8 text-sm font-medium">
-          <Link href={"/"}>
+          <Link href="#home">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Home"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#features">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Template"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#pricing">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Pricing"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#about">
             <MenuItem
               setActive={setActive}
               active={active}
@@ -55,7 +57,9 @@ function Navbar() {
             ></MenuItem>
           </Link>
         </div>
+        <Link href="#getstarted">
         <button className="sm:block hidden border-[#0099FF] rounded-2xl text-white text-[14px] font-semibold px-4 py-2 shadow-[inset_0px_0px_8px_0px_#0099FF] bg-[#03263D]">Try it now</button>
+        </Link>
         {/* Mobile Menu  */}
         <button
           type="button"
@@ -103,35 +107,37 @@ function Navbar() {
           } overflow-hidden`}
         >
           <div className="flex flex-col items-center bg-black text-white space-y-4 pt-8 pb-8 rounded-lg">
-          <Link href={"/"}>
+          <Link href="#home">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Home"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#features">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Template"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#pricing">
             <MenuItem
               setActive={setActive}
               active={active}
               item="Pricing"
             ></MenuItem>
           </Link>
-          <Link href={"/"}>
+          <Link href="#about">
             <MenuItem
               setActive={setActive}
               active={active}
               item="About"
             ></MenuItem>
           </Link>
+          <Link href="#getstarted">
             <button className="border-[#0099FF] rounded-2xl text-white text-[14px] font-semibold px-4 py-2 shadow-[inset_0px_0px_8px_0px_#0099FF] bg-[#03263D]">Try it now</button>
+            </Link>
           </div>
         </div>
     </div>

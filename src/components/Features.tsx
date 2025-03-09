@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   return (
     <>
+    <section id="features">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -83,6 +84,7 @@ const Features = () => {
           <Image src={f3} alt="features" unoptimized />
         </motion.div>
       </div>
+      </section>
     </>
   );
 };

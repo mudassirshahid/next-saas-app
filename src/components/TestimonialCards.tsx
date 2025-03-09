@@ -29,6 +29,7 @@ const testimonials = [
 
 function TestimonialCards() {
   return (
+    <section id="about">
     <div className="h-auto w-full relative flex flex-col items-center overflow-hidden lg:my-24 my-12">
       <div
         className="bg-no-repeat bg-[50%_-68px] "
@@ -73,6 +74,7 @@ function TestimonialCards() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

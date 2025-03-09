@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 const Pricing = () => {
   return (
     <>
+    <section id="pricing">
       <div className="container mx-auto md:my-28 my-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -302,6 +303,7 @@ const Pricing = () => {
           </motion.div>
         </motion.div>
       </div>
+      </section>
     </>
   );
 };
